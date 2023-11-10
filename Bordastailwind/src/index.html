@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas</title>
+
+    <!-- Conexão output Tailwind css -->
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+<body>
+    <!-- Conceito border-radius -->
+    <!-- Rounded - border-radius -->
+    <button class="bg-red-500 m-4 p-4 rounded">Teste rounded</button>
+
+     <!-- Rounded-sm - border-radius -->
+     <button class="bg-red-500 m-4 p-4 rounded-sm">Teste sm</button>
+
+     <!-- Rounded-3xl - border-radius -->
+     <button class="bg-red-500 m-4 p-4 rounded-3xl">Teste 3xl</button>
+
+      <!-- Rounded-full - border-radius -->
+      <button class="bg-red-500 m-4 p-4 rounded-full">Teste full</button>
+    
+      <!-- Circular -->
+      <div class="flex justify-center items-center">
+        <span class="bg-green-800 w-20 h-20 m-4 rounded-full flex justify-center items-center text-center text-white font-bold">Circular / full</span>
+      </div>
+
+       <!-- Pilula -->
+       <div class="flex justify-center items-center">
+        <span class="bg-purple-800 w-10 h-20 m-4 rounded-full flex justify-center items-center text-center text-white font-bold">Pilula</span>
+      </div>
+
+
+
+      <!-- Conceito largura e cor de bordas -->
+      <!-- Borda tamaho 4 e cor amarela -->
+      <div class="flex justify-center items-center">
+        <span class="bg-green-800 w-20 h-20 m-4 flex justify-center items-center text-center text-white font-bold border-4 border-yellow-500">Botão</span>
+      </div>
+
+      <!-- Borda tamanho 4 e cor azul com border-radius -->
+      <div class="flex justify-center items-center">
+        <span class="bg-pink-800 w-20 h-20 m-4 flex justify-center items-center text-center text-white font-bold border-4 border-blue-500 rounded-lg">Botão</span>
+      </div>
+
+
+      <!-- Conceito opacidade e estilo de borda -->
+
+      <!-- Opacity 5 e 75 -->
+      <div class="flex justify-center items-center">
+        <span class="bg-orange-800 w-20 h-20 m-4 flex justify-center items-center text-center text-white font-bold border-4 border-blue-500 rounded-lg border-opacity-5">Border opacity 5</span>
+        <span class="bg-orange-800 w-20 h-20 m-4 flex justify-center items-center text-center text-white font-bold border-4 border-blue-500 rounded-lg border-opacity-75">Border opacity 75</span>
+      </div>
+
+      <!-- Estilo da borda -->
+      <div class="flex justify-center items-center">
+        <span class="bg-black w-20 h-20 m-4 flex justify-center items-center text-center text-white font-bold border-4 border-blue-500 rounded-lg border-opacity-5 border-dashed">Border dashed</span>
+        <span class="bg-gray-800 w-20 h-20 m-4 flex justify-center items-center text-center text-white font-bold border-4 border-blue-500 rounded-lg border-opacity-75 border-dotted">Border dotted</span>
+        <span class="bg-gray-800 w-20 h-20 m-4 flex justify-center items-center text-center text-white font-bold border-4 border-blue-500 rounded-lg border-opacity-75 border-collapse">Border collapse</span>
+        <span class="bg-gray-800 w-20 h-20 m-4 flex justify-center items-center text-center text-white font-bold border-4 border-blue-500 rounded-lg border-opacity-75 border-separate">Border separate</span>
+      </div>
+
+      <!-- Divide eixo x dotted -->
+      <div class="grid grid-cols-4 mt-4 divide-x-4 divide-blue-600 divide-dotted">
+        <div class="text-center">1</div>
+        <div class="text-center">2</div>
+        <div class="text-center">3</div>
+        <div class="text-center">4</div>
+      </div>
+
+      <!-- Divide eixo y dashed-->
+      <div class="mt-4 divide-y-2 divide-pink-600 divide-dashed">
+        <div class="text-center">1</div>
+        <div class="text-center">2</div>
+        <div class="text-center">3</div>
+        <div class="text-center">4</div>
+      </div>
+    
+    
+      <!-- Box shadow -->
+      <div class="w-20 h-20 m-6 shadow-xs">Sobra pequena</div>
+      <div class="w-20 h-20 m-6 shadow-md">Sobra média</div>
+      <div class="w-20 h-20 m-6 shadow-lg">Sobra grande</div>
+      <div class="w-20 h-20 m-6 shadow-2xl">Sobra 2xl</div>
+    
+    </body>
+</html>

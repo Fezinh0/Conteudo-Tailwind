@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaçamento e alinhamento</title>
+
+    <!-- Conexão output tailwindcss -->
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+<body>
+
+    <!-- Conceito justify eixo x - para os lados direito e esquerdo -->
+    <!-- Justify-end -->
+    <div class="flex p-2 bg-red-300 justify-end">
+        <div class="bg-red-600 p-4 m-4">1</div>
+        <div class="bg-red-600 p-4 m-4">2</div>
+        <div class="bg-red-600 p-4 m-4">3</div>
+        <div class="bg-red-600 p-4 m-4">4</div>
+    </div>
+
+    <!-- Justify-center -->
+    <div class="flex p-2 bg-blue-300 justify-center">
+        <div class="bg-blue-600 p-4 m-4">1</div>
+        <div class="bg-blue-600 p-4 m-4">2</div>
+        <div class="bg-blue-600 p-4 m-4">3</div>        
+        <div class="bg-blue-600 p-4 m-4">4</div>
+    </div>
+
+    <!-- Justify between -->
+    <div class="flex p-2 bg-green-300 justify-between">
+        <div class="bg-green-600 p-4 m-4">1</div>
+        <div class="bg-green-600 p-4 m-4">2</div>
+        <div class="bg-green-600 p-4 m-4">3</div>
+        <div class="bg-green-600 p-4 m-4">4</div>
+    </div>
+
+    <!-- Justify around -->
+    <div class="flex p-2 bg-purple-300 justify-around">
+        <div class="bg-purple-600 p-4 m-4">1</div>
+        <div class="bg-purple-600 p-4 m-4">2</div>
+        <div class="bg-purple-600 p-4 m-4">3</div>
+        <div class="bg-purple-600 p-4 m-4">4</div>
+    </div>
+
+    <!-- Exercicio -->
+    <div class="bg-yellow-300 flex justify-center">
+        <div class="bg-yellow-600 p-4 m-4">1</div>
+        <div class="bg-yellow-900 p-4 m-4">2</div>
+        <div class="bg-pink-600 p-4 m-4">3</div>
+        <div class="bg-yellow-600 p-4 m-4">4</div>
+        <div class="bg-yellow-900 p-4 m-4">5</div>
+        <div class="bg-pink-600 p-4 m-4">6</div>
+    </div>
+
+    <!-- Conceito content eixo y - pra cima e baixo -->
+    <!-- Content center -->
+    <div class="flex flex-wrap h-40 bg-purple-800 p-10 content-center">
+        <div class="bg-pink-300 h-10 p-2 mx-4">1</div>
+        <div class="bg-pink-300 h-10 p-2 mx-4">2</div>
+        <div class="bg-pink-300 h-10 p-2 mx-4">3</div>
+    </div>
+
+    <!-- Content around -->
+    <div class="h-40 my-10 bg-blue-800 flex flex-wrap content-around">
+        <div class="bg-gray-300 h-10 p-2 w-1/3">1</div>
+        <div class="bg-gray-300 h-10 p-2 w-1/3">2</div>
+        <div class="bg-gray-300 h-10 p-2 w-1/3">3</div>
+        <div class="bg-gray-300 h-10 p-2 w-1/3">4</div>
+        <div class="bg-gray-300 h-10 p-2 w-1/3">5</div>
+        <div class="bg-gray-300 h-10 p-2 w-1/3">6</div>
+    </div>
+
+    <!-- Content between -->
+    <div class="flex flex-wrap h-40 bg-orange-800 content-between">
+        <div class="bg-red-300 h-10 p-2 w-1/3">1</div>
+        <div class="bg-red-300 h-10 p-2 w-1/3">2</div>
+        <div class="bg-red-300 h-10 p-2 w-1/3">3</div>
+        <div class="bg-red-300 h-10 p-2 w-1/3">1</div>
+        <div class="bg-red-300 h-10 p-2 w-1/3">2</div>
+        <div class="bg-red-300 h-10 p-2 w-1/3">3</div>
+    </div>
+
+    
+    <!-- Conceito items -->
+    <div class="bg-orange-400 flex h-40 items-center">
+        <div class="bg-purple-700 m-2 p-2">1</div>
+        <div class="bg-purple-700 m-2 p-2">2</div>
+        <div class="bg-purple-700 m-2 p-2">3</div>
+    </div>
+
+    <!-- Grid place content start-->
+    <div class="bg-blue-500 grid grid-cols-3 h-40 place-content-start">
+        <div class="bg-red-300 m-2 p-2">1</div>
+        <div class="bg-red-300 m-2 p-2">2</div>
+        <div class="bg-red-300 m-2 p-2">3</div>
+        <div class="bg-red-300 m-2 p-2">1</div>
+        <div class="bg-red-300 m-2 p-2">2</div>
+        <div class="bg-red-300 m-2 p-2">3</div>
+    </div>
+
+    <!-- place content around -->
+    <div class="bg-pink-500 grid grid-cols-3 h-50 place-content-around">
+        <div class="bg-yellow-300 m-2 p-2">1</div>
+        <div class="bg-yellow-300 m-2 p-2">2</div>
+        <div class="bg-yellow-300 m-2 p-2">3</div>
+        <div class="bg-yellow-300 m-2 p-2">4</div>
+        <div class="bg-yellow-300 m-2 p-2">5</div>
+        <div class="bg-yellow-300 m-2 p-2">6</div>
+        <div class="bg-yellow-300 m-2 p-2">7</div>
+        <div class="bg-yellow-300 m-2 p-2">8</div>
+        <div class="bg-yellow-300 m-2 p-2">9</div>
+    </div>
+
+
+    <!-- Place items -->
+    <!-- place items start -->
+    <div class="bg-gray-500 grid grid-cols-3 h-40 place-items-start">
+        <div class="bg-blue-300 m-2 p-2">1</div>
+        <div class="bg-blue-300 m-2 p-2">2</div>
+        <div class="bg-blue-300 m-2 p-2">3</div>
+        <div class="bg-blue-300 m-2 p-2">1</div>
+        <div class="bg-blue-300 m-2 p-2">2</div>
+        <div class="bg-blue-300 m-2 p-2">3</div>
+    </div>
+
+
+    <!-- Conceito padding -->
+    <div class="bg-pink-900 h-40 p-10">
+        <!-- Padding para todos os lados -->
+        <span class="bg-yellow-400 p-4">Padding</span>
+
+        <!-- Padding paras os lados -->
+        <span class="bg-yellow-400 px-4">Padding X</span>
+
+        <!-- Padding para cima -->
+        <span class="bg-yellow-400 py-4">Padding Y</span>
+
+        <!-- Padding para os lados e para cima / para todos os lados -->
+        <span class="bg-yellow-400 px-4 py-2">Botão</span>
+
+        <!-- Padding custom -->
+        <span class="bg-yellow-400 pl-4 pr-8 pt-6 pb-10">Botão</span>
+    </div>
+
+
+    <!-- Exercicio -->
+    <div class="">
+        <span class="px-4 py-2 bg-lime-950 hover:bg-purple-950 duration-1000 font-bold text-white rounded">Button</span>
+    </div>
+
+
+    <!-- Conceito margin -->
+    <!-- Margin em todos os lados  -->
+    <div class="w-20 text-center h-10 bg-green-900 text-white m-4">
+        Margin
+    </div>
+
+    <!-- Margin custom eixo x e eixo y -->
+    <div class="w-40 text-center h-10 bg-green-900 text-white mx-10 my-4">
+        Margin X e Y
+    </div>
+
+    <!-- Margin custom em todas as direções -->
+    <div class="w-20 text-center h-10 bg-green-900 text-white ml-5 mt-10 mb-8 mr-1">
+        Margin LTRB
+    </div>
+
+    <!-- Exercicio -->
+    <div class="bg-pink-700 w-20 mx-auto mt-2 text-center text-white font-bold">
+        Salvee
+    </div>
+
+
+    <!-- Conceito width -->
+    <!-- Max width -->
+    <div class="bg-gray-700 text-center text-white font-bold p-4 max-w-5xl">
+        max-width
+    </div>
+
+    <!-- Min width -->
+    <div class="bg-green-700 text-center text-white font-bold p-4 min-w-full">
+        min width
+    </div>
+    
+
+    <!-- Conceito Heigth -->
+    <div class="bg-gray-700 text-center mt-10 text-white font-bold h-20">
+        Heigth
+    </div>
+
+    <!-- Max heigth -->
+    <div class="bg-pink-700 text-center mt-10 text-white font-bold h-60">
+        Max heigth
+    </div>
+
+
+
+    <p class="m-20">ESPAÇAMENTO</p>
+    <p class="m-20">ESPAÇAMENTO</p>
+    <p class="m-20">ESPAÇAMENTO</p>
+    <p class="m-20">ESPAÇAMENTO</p>
+</body>
+</html>

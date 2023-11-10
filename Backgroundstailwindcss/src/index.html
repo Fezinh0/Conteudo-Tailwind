@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgrounds</title>
+
+    <!-- Conexão output tailwindcss -->
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+<body>
+    <!-- Conceito backgrounds -->
+    <!-- Bg-local -->
+    <div class="h-48 overflow-auto bg-tailwind">
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+    </div>
+    
+    <p class="p-10">Testando</p>
+    <p class="p-10">Testando</p>
+    <p class="p-10">Testando</p>
+    <p class="p-10">Testando</p>
+    <p class="p-10">Testando</p>
+    <p class="p-10">Testando</p>
+    <p class="p-10">Testando</p>
+    <p class="p-10">Testando</p>
+
+    <!-- Bg-fixed -->
+    <div class="h-40 overflow-auto bg-fixed" style="background-image: url('img/bg_cidade.jpg');">
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+    </div>
+
+    <!-- Cor e opacidade de background -->
+    <div class="h-10 bg-green-100"></div>
+    <div class="h-10 bg-green-200"></div>
+    <div class="h-10 bg-green-300"></div>
+    <div class="h-10 bg-green-400"></div>
+    <div class="h-10 bg-green-500"></div>
+    <div class="h-10 bg-green-600"></div>
+    <div class="h-10 bg-green-700"></div>
+    <div class="h-10 bg-green-800"></div>
+    <div class="h-10 bg-green-900"></div>
+    <div class="h-10 bg-green-900 bg-opacity-0">Está totalmente opaca</div>
+    <div class="h-10 bg-green-900 bg-opacity-25"></div>
+    <div class="h-10 bg-green-900 bg-opacity-75"></div>
+
+
+    <!-- Posição e repetição do background  -->
+    <!-- Right e bottom -->
+    <div class="h-40 overflow-auto bg-right-bottom" style="background-image: url('img/bg_cidade.jpg');">
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+    </div>
+
+    <!-- center -->
+    <div class="h-40 my-10 overflow-auto bg-center" style="background-image: url('img/bg_cidade.jpg');">
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+    </div>
+
+    <!-- No repeat -->
+    <div class="h-40 my-10 overflow-auto bg-center bg-no-repeat" style="background-image: url('img/tailwind.png');">
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+    </div>
+
+    <!-- Só repete no eixo Y -->
+    <div class="h-40 my-10 overflow-auto bg-local bg-repeat-y" style="background-image: url('img/tailwind.png');">
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+        <p class="p-10">Testando</p>
+    </div>
+
+
+    <!-- Tamanho do background -->
+    <!-- Cover -->
+    <div class="h-40 my-10 bg-cover" style="background-image: url('img/bg_cidade.jpg');">
+    </div>
+
+    <!-- Cover com bottom -->
+    <div class="h-40 my-10 bg-cover bg-bottom" style="background-image: url('img/bg_cidade.jpg');">
+    </div>
+
+    <!-- Cover e center -->
+    <div class="h-40 my-10 bg-cover bg-center" style="background-image: url('img/bg_cidade.jpg');">
+    </div>
+
+     <!-- Contain -->
+     <div class="h-40 my-10 bg-contain bg-no-repeat bg-center" style="background-image: url('img/bg_cidade.jpg');">
+    </div>
+
+
+    <!-- Degrade e img personalizada -->
+    <!-- TO-TR top right -->
+    <p>Gradiente</p>
+    <div class="h-40 bg-gradient-to-tr from-red-700 to-yellow-500">
+    </div>
+
+    <!-- to-bottom via: meio to final  -->
+    <div class="h-40 my-10 bg-gradient-to-b from-blue-700 via-green-900 to-yellow-500">
+    </div>
+    
+</body>
+</html>

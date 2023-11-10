@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrução de layout</title>
+
+    <link rel="stylesheet" href="./css/output.css">
+    <script src="/tailwind.config.js"></script>
+</head>
+<body>
+    <!-- conceito container -->
+    <div class="container bg-red-400 text-center mx-auto p-4 my-5 font-bold text-green-600 border-2">
+        <p>Texto do container</p>
+    </div>
+    
+    <!-- Exercicio 1 -->
+    <div class="container bg-green-800 md:bg-blue-950 text-center text-white">
+        OI MEU CHAPA!
+    </div>
+
+    
+    
+    <!-- conceito: Box sizing -->
+    <!-- Border box -->
+    <div class="container bg-pink-800 m-4 border-2 border-purple-900 border-box p-10">
+        <!-- Border box respeita a largura dada pela propriedade width-->
+        <p>Border-box</p>
+    </div>
+    
+    <!-- Border content -->
+    <div class="container bg-yellow-600 border-2 border-teal-900 m-4 box-content p-10">
+        <!-- Box content respeita a largura e soma os paddings e os borders -->
+        <p>Border content</p>
+    </div>
+
+
+    
+    <!-- conceito: Display -->
+    <div class="container">
+        <span class="block bg-black text-white">Não são elementos de bloco</span>
+        <span class="block bg-orange-700">Não são elementos de bloco</span>
+        <div class="bg-blue-500 inline-block">block</div>
+        <div class="bg-blue-500 inline-block">block</div>
+        <div class="bg-purple-950 md:hidden">Estou aparecendo</div>
+    </div>
+
+
+    
+    <!-- Exercicio 2 -->
+    <div class="container bg-black my-5 p-4 mx-5 rounded-lg">
+        <div class="bg-lime-400 inline-block p-2 rounded-lg">Clica</div>
+        <div class="bg-fuchsia-500 inline-block p-2 rounded-lg">Ai</div>
+        <div class="bg-sky-600 inline-block p-2 rounded-lg">OTÁRIO</div>
+    </div>
+
+    <!-- conceito: Floats e clear -->
+    <div class="bg-fuchsia-950 text-white float-right">Float Rigth</div>
+    <div class="bg-green-950 text-white float-left">Float Left</div>
+    <div class="clear-both"></div>
+    <div class="bg-green-950 text-white float-right">Float Rigth</div>
+    <div class="bg-violet-800 text-white float-left">Float Left</div>
+
+
+    <!-- conceito: Overflow -->
+    <!-- Hidden -->
+    <div class="overflow-hidden my-16 bg-red-600 h-16">
+        <p>Testando Overflow HIDDEN</p>
+        <p>Testando Overflow</p>
+        <p>Testando Overflow</p>
+        <p>Testando Overflow</p>
+        <p>Testando Overflow</p>
+        <p>Testando Overflow</p>
+        <p>Testando Overflow</p>
+        <p>Testando Overflow</p>
+    </div>
+    
+    <!-- Auto -->
+    <div class="overflow-auto my-16 text-white bg-sky-950 h-16">
+        <p>Testando Overflow AUTO</p>
+        <p>Testando Overflow</p>
+        <p>Testando Overflow</p>
+        <p>Testando Overflow</p>
+        <p>Testando Overflow</p>
+        <p>Testando Overflow</p>
+        <p>Testando Overflow</p>
+        <p>Testando Overflow</p>
+    </div>
+
+    <!-- X-auto -->
+    <div class="overflow-x-auto bg-amber-950">
+        aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    </div>
+
+    <!-- Y-auto -->
+    <div class="overflow-y-auto my-16 text-black bg-yellow-300 h-16">
+        <p>Testando Overflow Y-AUTO</p>
+        <p>Testando Overflow</p>
+        <p>Testando Overflow</p>
+        <p>Testando Overflow</p>
+        <p>Testando Overflow</p>
+        <p>Testando Overflow</p>
+        <p>Testando Overflow</p>
+        <p>Testando Overflow</p>
+    </div>
+
+
+    <!-- conceito: Positions e Direções -->
+    <div class="relative bg-orange-500">
+        teste
+        <div class="absolute top-0 right-0 bg-pink-800 text-white">Absolute</div>
+    </div>
+
+    <!-- Exercicio -->
+    <div class="container h-10 relative w-full bg-black m-5">
+        Container
+        <div class="absolute right-0 bottom-0 bg-orange-600 text-green-950">Olá</div>
+    </div>
+
+
+    <!-- conceito: Visibilidade -->
+    <div class="container bg-yellow-400 invisible m-10">
+        <p class="text-black">Estou Oculto</p>
+    </div>
+
+    <!-- conceito Z-index -->
+    <div class="container relative">
+        <div class="bg-cyan-900 h-20 w-20 p-6 absolute z-10">Na frente</div>
+        <div class="bg-teal-800 h-20 w-20 p-6 absolute m-4">Atrás</div>
+    </div>
+
+    <!-- Exercicio -->
+    <div class="container relative">
+        <div class="absolute right-0 bg-green-900 w-20 p-6 h-20 z-30">UM</div>
+        <div class="absolute right-0 bg-slate-900 w-20 p-6 h-20 z-20 m-6">DOIS</div>
+        <div class="absolute right-0 bg-orange-800 w-20 p-6 h-20 m-10">TRÊS</div>
+    </div>
+
+</body>
+</html>

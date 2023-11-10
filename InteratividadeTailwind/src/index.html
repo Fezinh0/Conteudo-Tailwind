@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interatividade</title>
+
+    <!-- Conexão output Tailwind Css -->
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+<body>
+
+    <!-- Conceito Appearence -->
+    <div class="m-4">
+        <!-- Com appearence -->
+        <select name="" id="" class="appearance-none">
+            <option value="">Teste 1</option>
+        </select>
+
+        <!-- Sem appearence -->
+        <select name="" id="" class="">
+            <option value="">Teste 2</option>
+        </select>
+    </div>
+
+    <!-- Cursor do mouse -->
+
+    <!-- Pointer -->
+    <div class="h-20 bg-pink-400 cursor-pointer"></div>
+
+    <!-- Wait -->
+    <div class="h-20 bg-yellow-400 cursor-wait"></div>
+
+    <!-- Not allowed -->
+    <div class="h-20 bg-orange-900 cursor-not-allowed"></div>
+
+    <!-- Text -->
+    <div class="h-20 bg-green-400 cursor-text"></div>
+
+    
+    <!-- Remove outline -->
+    <div class="mt-20 p-6 bg-red-600">
+        
+        <!-- Sem borda no input -->
+        <input type="text" placeholder="Clique aqui" class="outline-none">
+        
+        <!-- Borda do input com cores -->
+        <input type="text" placeholder="Clique aqui 2" class="outline-green-800">
+    </div>
+
+    
+    <!-- Remove pointer events -->
+    <div class="m-4 p-20 bg-orange-800">
+        <!-- Pointers events none -->
+        <select name="" id="" class="pointer-events-none">
+            <option value="">Teste Pointers</option>
+        </select>
+
+        <!-- Sem pointers events -->
+        <select name="" id="" class="">
+            <option value="">Teste Pointers 2</option>
+        </select>
+        
+        <div>
+            <!-- Pointers events none -->
+            <textarea name="" id="" cols="30" rows="10" class="pointer-events-none"></textarea>
+            
+            <!-- Sem pointers events -->
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+
+
+    <!-- Modificando Resize do text area -->
+    <div class="bg-blue-700 p-6">
+        <!-- Resize None -->
+        <textarea name="" id="" cols="30" rows="10" class="resize-none"></textarea>
+        
+        <!-- Resize eixo x  -->
+        <textarea name="" id="" cols="30" rows="10" class="resize-x"></textarea>
+
+         <!-- Resize eixo y  -->
+         <textarea name="" id="" cols="30" rows="10" class="resize-y"></textarea>
+
+          <!-- Resize -->
+        <textarea name="" id="" cols="30" rows="10" class="resize"></textarea>
+    </div>
+
+
+    <!-- Limitando Seção de um elemento -->
+    <div class="bg-purple-700 p-6">
+        <!-- Select None -->
+        <p class="select-none">Este paragrafo não pode ser selecionado</p>
+
+        <!-- Select Auto -->
+        <p class="select-auto">Este paragrafo não pode ser selecionado</p>
+    </div>
+
+</body>
+</html>

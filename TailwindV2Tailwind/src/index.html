@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindCSS V2</title>
+    <link rel="stylesheet" href="./css/output.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <!-- Conceito cores novas ex: amber atráves do const no config-->
+    <!-- Todas as cores agora tem 50 -->
+    <div class="bg-amber-500 text-white font-bold text-center p-10">
+        <p>Esta é uma nova cor</p>
+    </div>
+    <div class="bg-amber-50 text-black font-bold text-center p-10">
+        <p>Teste amber 50</p>
+    </div>
+    <div class="bg-purple-50 text-black font-bold text-center p-10">
+        <p>Teste purple 50</p>
+    </div>
+
+    <!-- Color rose do config -->
+    <div class="bg-rose-500 text-black font-bold text-center p-10">
+        <p>Teste rose config</p>
+    </div>
+
+    <!-- Conceito Dark mode quando muda a cor do sistema operacional do cliente/ usuário-->
+    <div class="bg-purple-50 dark:bg-blue-800 dark:text-white text-black font-bold text-center p-10">
+        <p>Dark mode</p>
+    </div>
+
+
+    <!-- Not Func !!! -->
+    <!-- Dark mode manual -->
+    <div class="m-4">
+        <button id="dark-modee" class="bg-green-800 hover:bg-green-950 dark:bg-purple-950 dark:text-green-500 text-white rounded py-2 px-4">Ativar/Desativar</button>
+    </div>
+
+
+    <!-- Conceito Ring -->
+    <div class="m-6">
+        <!-- Ring externo -->
+        <button class="px-2 py-4 bg-amber-700 rounded-md text-white ring-4 ring-green-700">Ring externo</button>
+        <!-- Ring interno -->
+        <button class=" m-10 px-2 py-4 bg-gray-700 rounded-lg text-white ring-4 ring-inset ring-gray-500">Ring interno</button>
+        <!-- Ring interno com Focus -->
+        <button class=" m-8 px-2 py-4 bg-blue-700 rounded-lg text-white ring-4 ring-inset focus:ring-pink-500 focus:outline-none">Ring interno</button>
+    </div>
+
+
+    <!-- Forms com tailwind -->
+    <!-- npm install @tailwindcss/forms -->
+    <div class="m-6">
+        <form action="">
+            <!-- Input padrão Tailwind -->
+            <div><input type="text" placeholder="Digite seu nome"></div>
+            <div class="m-4">
+                <!-- Select -->
+                <select name="" id="" class="px-10 py-2 rounded">
+                    <option value="">Valor 1</option>
+                    <option value="">Valor 2</option>
+                </select>
+            </div>
+            <!-- Checkbox -->
+            <div class="">
+                <input type="checkbox" class="border-green-500 text-amber-600 mr-2 focus:ring-0">
+                <label for="checkbox"></label>
+            </div>
+        </form>
+    </div>
+
+    
+    <!-- Line heigth padrão font size -->
+    <!-- Quanto maior a fonte maior a line heigth -->
+    <div class="m-6">
+        <h1 class="text-4xl">Line heigth padrão</h1>
+        <h1 class="text-4xl">Line heigth padrão</h1>
+        <h1 class="text-4xl leading-3">Line heigth padrão</h1>
+        <h1 class="text-4xl leading-3">Line heigth padrão</h1>
+    </div>
+
+
+    <!-- + Opções para espaçamento, fontes, opacidade -->
+    <!-- Margin 0.5 menor -->
+    <div class="m-0.5 bg-pink-500">
+        <!-- Fonte 9xl -->
+        <p class="text-9xl">Testando espaçamento menor</p>
+    </div>
+
+    <!-- Melhoras no @apply como hover,focus e etc; -->
+    <!-- PROJETO jDM mostra essa funcionalidade -->
+
+
+    <!-- Text overflow limitação de texto -->
+    <!-- ellipsis not func!!! -->
+    <p class="overflow-ellipsis max-w-xs m-6 p-6 mx-auto bg-green-300 text-red-600 font-medium rounded-lg">
+        Lorem, ipsum dolor sit amet consddssdfdfrgrrtgyyhhghjddsderettrggfsddffgrtgrectetur adipisicing elit. Voluptatem sunt commodi quis? Doloremque dolore beatae velit perspiciatis ipsam qui tempora consequatur ex magnam est, saepe reprehenderit optio dolorem suskjskhjdhsjghghdgdhgdgferffrfrtrtrtttrtrtrtdsddsdhgdgsdhsghdgsgdrtydvdfrtywescipit exercitationem.
+    </p>
+
+</body>
+</html>
